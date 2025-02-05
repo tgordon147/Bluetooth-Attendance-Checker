@@ -9,8 +9,11 @@ The Bluetooth Attendance Checker mobile app allows students to authenticate and 
 ***Features***
 
 Seamless Attendance Verification: Students simply open the app and start advertising their presence—no need for manual check-ins.
+
 Prevention of Fraudulent Attendance: BLE technology ensures students must be physically near the lecture hall’s Attendance Server (Raspberry Pi) to register.
+
 Low Power Consumption: Uses Bluetooth Low Energy (BLE) to minimize battery usage.
+
 AWS & Blackboard Integration:
 The app communicates with the server, which uploads attendance data to AWS-hosted Blackboard instances.
 Attendance records can be automatically updated on Blackboard’s Attendance API (where available).
@@ -18,7 +21,9 @@ Attendance records can be automatically updated on Blackboard’s Attendance API
 ***How It Works***
 
 Student Login: The app authenticates users and registers them for attendance tracking.
+
 BLE Broadcasting: The app advertises a unique student ID via BLE, which is detected by the Raspberry Pi-based server.
+
 Attendance Tracking: The server records the student’s presence and updates the university’s attendance system (Blackboard).
 
 ***Integration with Server***
